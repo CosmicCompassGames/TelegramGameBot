@@ -1,0 +1,35 @@
+:function startgame
+    text "Welcome to Superhero Adventure! You are the superhero known as Captain Courage. You have been called upon to save the city from the evil villain, Dr. Destruction. Will you accept the challenge?"
+    button "Yes, I'm ready!" | intro:accept
+    button "No, I'm not ready yet." | intro:decline
+
+:function intro
+    :action accept
+        text "You take off into the sky, determined to save the city from Dr. Destruction's evil plan. As you fly over the city, you see a group of innocent civilians trapped in a burning building. What will you do?"
+        button "Use my super strength to lift the building and save the people." | chapter1:save
+        button "Use my heat vision to blast a hole in the wall and rescue the people." | chapter1:blast
+    :action decline
+        text "You have refused the call to action. The city is doomed to fall to Dr. Destruction's plan. Game over."
+        button "Play again" | startgame
+
+:function chapter1
+    :action save
+        text "You use your super strength to lift the burning building and carry it to safety. The civilians cheer and thank you for your heroism. As you continue your mission, you hear a cry for help coming from a nearby bank. What will you do?"
+        button "Fly to the bank and stop the robbers." | chapter2:bank
+        button "Continue on your mission to find Dr. Destruction." | chapter2:mission
+    :action blast
+        text "You use your heat vision to blast a hole in the burning building and rescue the civilians. They thank you for your bravery. As you continue your mission, you hear a cry for help coming from a nearby bank. What will you do?"
+        button "Fly to the bank and stop the robbers." | chapter2:bank
+        button "Continue on your mission to find Dr. Destruction." | chapter2:mission
+
+:function chapter2
+    :action bank
+        text "You arrive at the bank to find a group of robbers attempting to steal money. You must stop them before they can get away! What will you do?"
+        button "End of demo" | ending:
+    :action mission
+        text "You continue your mission to find Dr. Destruction. You hear that he is at the city's power plant, trying to sabotage the city's electrical system. What will you do?"
+        button "End of demo" | ending:
+
+:function ending
+    text "Thank you for playing - this game is available on github and is opensource, think you have what it takes to create the next Telegram Text Adventure Game?"
+    button "Play Again" | startgame:
