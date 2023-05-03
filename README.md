@@ -21,5 +21,16 @@ To get started with the Telegram game engine bot, simply clone this repository a
 
 To use the Telegram game engine bot, simply start a chat with the [Cosmic Compass Games bot](https://t.me/CosmicCompassGamesHelperBot) and send the command /start to begin playing. The game engine supports inline buttons for intuitive gameplay mechanics, and allows players to explore uncharted worlds, make groundbreaking discoveries, and engage in exciting adventures through the depths of space.
 
+## Update Tree
+
+- [ ] Saving and updating players
+    - [ ] Add player data model
+    - [ ] Implement player creation and update methods
+    - [ ] Save player data to database
+- [ ] Adding and saving variables
+    - [ ] Add variable data model
+    - [ ] Implement variable creation and update methods
+    - [ ] Save variable data to database
+
 ## License
 This project is unlicensed.
