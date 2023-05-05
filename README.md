@@ -11,7 +11,6 @@ This project is a [Telegram](https://telegram.org/) game engine bot that allows 
 - Unique gameplay mechanics and challenges
 - Intuitive inline buttons
 - Easy to use and integrate into Telegram chats
-- Open source with a permissive MIT license
 
 ## Getting Started
 
